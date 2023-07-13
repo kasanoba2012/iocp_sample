@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{B4E3E845-76AD-4581-90CC-278B8B8810E0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\teemoescape_5_1\private\AppServer.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\App_Server.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Bullet.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Chatting.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\ChatUserWidget.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\ClientInfo.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Client_Packet.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Client_To_Server.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Define.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\DrMundo.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\DrMundoFSM.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Dr_Mundo_AnimInstance.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Enemy.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\EnemyAnim.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\EnemyAnimInstance.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\EnemyFSM.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\InGamePacket.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\IocpNetServer.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Login.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Login_Signup.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\MoveTestActor.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\MyActor.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Odbc.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Packet.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\PacketManager.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\RecvBuffer.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Remotable_Teemo.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Remote_Teemo_Manager.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Server_Client_Actor_Manager.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Server_Packet_Process.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Setting_Choice.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Teemo.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\TeemoAnimInstance.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\TeemoController.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\TeemoEscape_5_1.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\TeemoEscape_5_1GameModeBase.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\TeemoGameInstance.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\TeemoManager.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Teemo_FSM.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Teemo_HUD.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Teemo_Remote_FSM.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\Temp_Object.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\User.cpp" />
+    <ClCompile Include="source\teemoescape_5_1\private\UserManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\teemoescape_5_1\public\AppServer.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\App_Server.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Bullet.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Chatting.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\ChatUserWidget.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\ClientInfo.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Client_Packet.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Client_To_Server.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Define.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\DrMundo.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\DrMundoFSM.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Dr_Mundo_AnimInstance.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Enemy.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\EnemyAnim.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\EnemyAnimInstance.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\EnemyFSM.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\ErrorCode.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\InGamePacket.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\IocpNetServer.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Login.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Login_Signup.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\MoveTestActor.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\MyActor.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Odbc.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Packet.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\PacketManager.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\RecvBuffer.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Remotable_Teemo.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Remote_Teemo_Manager.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Server_Client_Actor_Manager.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Server_Packet_Process.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Setting_Choice.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Teemo.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\TeemoAnimInstance.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\TeemoController.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\TeemoEscape_5_1.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\TeemoEscape_5_1GameModeBase.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\TeemoGameInstance.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\TeemoManager.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Teemo_FSM.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Teemo_HUD.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Teemo_Remote_FSM.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\Temp_Object.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\User.h" />
+    <ClInclude Include="source\teemoescape_5_1\public\UserManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
